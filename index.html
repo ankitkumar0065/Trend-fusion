@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,44 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .hero-gradient-overlay { 
-            position: absolute; top: 0; right: 0; width: 50%; height: 100%; 
-            background-color: #f5f3ff; z-index: -10; border-top-left-radius: 100px; border-bottom-left-radius: 100px;
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
         }
+
+        .hero-gradient-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background-color: #f5f3ff;
+            z-index: -10;
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+
         @keyframes slideInFromTop {
-            from { transform: translateY(-10%); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            from {
+                transform: translateY(-10%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
-        .animate-slide-top { animation: slideInFromTop 0.3s ease-out; }
+
+        .animate-slide-top {
+            animation: slideInFromTop 0.3s ease-out;
+        }
     </style>
 </head>
+
 <body class="bg-slate-50 text-slate-900">
 
     <!-- Navigation -->
@@ -32,7 +57,8 @@
                     <div class="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center rotate-3 shadow-lg">
                         <span class="text-white font-black text-2xl">TF</span>
                     </div>
-                    <span class="text-2xl font-black tracking-tighter text-slate-900 uppercase">Trend<span class="text-indigo-600">Fusion</span></span>
+                    <span class="text-2xl font-black tracking-tighter text-slate-900 uppercase">Trend<span
+                            class="text-indigo-600">Fusion</span></span>
                 </div>
 
                 <!-- Desktop Menu -->
@@ -46,12 +72,31 @@
                 <!-- Icons & Mobile Toggle -->
                 <div class="flex items-center gap-4">
                     <div class="relative cursor-pointer p-2 hover:bg-slate-100 rounded-full transition-all">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
-                        <span id="cart-count" class="absolute top-0 right-0 bg-indigo-600 text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full font-bold border-2 border-white">0</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-shopping-cart">
+                            <circle cx="8" cy="21" r="1" />
+                            <circle cx="19" cy="21" r="1" />
+                            <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                        </svg>
+                        <span id="cart-count"
+                            class="absolute top-0 right-0 bg-indigo-600 text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full font-bold border-2 border-white">0</span>
                     </div>
                     <button class="md:hidden" id="menu-toggle">
-                        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-                        <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+                        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12" />
+                            <line x1="4" x2="20" y1="6" y2="6" />
+                            <line x1="4" x2="20" y1="18" y2="18" />
+                        </svg>
+                        <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" x2="6" y1="6" y2="18" />
+                            <line x1="6" x2="18" y1="6" y2="18" />
+                        </svg>
                     </button>
                 </div>
             </div>
@@ -73,18 +118,27 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1 text-center lg:text-left">
-                    <span class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-widest text-indigo-600 uppercase bg-indigo-50 rounded-full">New Arrival 2026</span>
+                    <span
+                        class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-widest text-indigo-600 uppercase bg-indigo-50 rounded-full">New
+                        Arrival 2026</span>
                     <h1 class="text-5xl md:text-7xl font-black text-slate-900 leading-tight mb-6">
                         Style Jo Aapki <br />
-                        <span class="text-indigo-600 underline decoration-indigo-200 underline-offset-8">Pehchan</span> Banaye
+                        <span class="text-indigo-600 underline decoration-indigo-200 underline-offset-8">Pehchan</span>
+                        Banaye
                     </h1>
                     <p class="text-lg text-slate-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                        Trend Fusion pe paiye Boys, Girls aur Kids ke liye sabse trending aur unique designs. Fashion wahi, jo sabse alag dikhaye!
+                        Trend Fusion pe paiye Boys, Girls aur Kids ke liye sabse trending aur unique designs. Fashion
+                        wahi, jo sabse alag dikhaye!
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#shop" class="px-10 py-4 bg-indigo-600 text-white rounded-xl font-bold shadow-xl shadow-indigo-200 hover:bg-indigo-700 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
-                            Shop Now 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        <a href="#shop"
+                            class="px-10 py-4 bg-indigo-600 text-white rounded-xl font-bold shadow-xl shadow-indigo-200 hover:bg-indigo-700 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
+                            Shop Now
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg>
                         </a>
                         <div class="flex items-center gap-4 px-6 py-4">
                             <div class="flex -space-x-2">
@@ -97,23 +151,35 @@
                     </div>
                 </div>
                 <div class="flex-1 relative">
-                    <div class="relative w-full aspect-square md:aspect-[4/5] bg-slate-200 rounded-3xl overflow-hidden shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover" alt="Model">
+                    <div
+                        class="relative w-full aspect-square md:aspect-[4/5] bg-slate-200 rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
+                            class="w-full h-full object-cover object-top" alt="Model">
                     </div>
-                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl hidden md:block border border-slate-100">
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl hidden md:block border border-slate-100">
                         <p class="text-indigo-600 font-bold text-2xl">25% OFF</p>
                         <p class="text-slate-500 text-sm">On First Purchase</p>
                     </div>
                 </div>
+                <div
+                    class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl hidden md:block border border-slate-100">
+                    <p class="text-indigo-600 font-bold text-2xl">25% OFF</p>
+                    <p class="text-slate-500 text-sm">On First Purchase</p>
+                </div>
             </div>
+        </div>
         </div>
     </section>
 
     <!-- Quote Section -->
     <section class="bg-slate-900 py-16 text-center text-white overflow-hidden relative">
-        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none flex flex-wrap gap-10 p-10 font-black text-4xl"></div>
+        <div
+            class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none flex flex-wrap gap-10 p-10 font-black text-4xl">
+        </div>
         <div class="relative z-10 px-4">
-            <h2 class="text-3xl md:text-4xl font-serif italic mb-4">"Fashion is not something that exists in dresses only. Fashion is in the sky, in the street..."</h2>
+            <h2 class="text-3xl md:text-4xl font-serif italic mb-4">"Fashion is not something that exists in dresses
+                only. Fashion is in the sky, in the street..."</h2>
             <p class="text-indigo-400 font-bold uppercase tracking-widest text-sm">— Trend Fusion Special —</p>
         </div>
     </section>
@@ -128,10 +194,14 @@
                 </div>
                 <!-- Filter Buttons -->
                 <div class="flex flex-wrap gap-2" id="filter-container">
-                    <button onclick="filterItems('All')" class="filter-btn active px-6 py-2 rounded-full font-bold bg-indigo-600 text-white shadow-lg">All</button>
-                    <button onclick="filterItems('Boys')" class="filter-btn px-6 py-2 rounded-full font-bold bg-slate-100 text-slate-600 hover:bg-slate-200">Boys</button>
-                    <button onclick="filterItems('Girls')" class="filter-btn px-6 py-2 rounded-full font-bold bg-slate-100 text-slate-600 hover:bg-slate-200">Girls</button>
-                    <button onclick="filterItems('Kids')" class="filter-btn px-6 py-2 rounded-full font-bold bg-slate-100 text-slate-600 hover:bg-slate-200">Kids</button>
+                    <button onclick="filterItems('All')"
+                        class="filter-btn active px-6 py-2 rounded-full font-bold bg-indigo-600 text-white shadow-lg">All</button>
+                    <button onclick="filterItems('Boys')"
+                        class="filter-btn px-6 py-2 rounded-full font-bold bg-slate-100 text-slate-600 hover:bg-slate-200">Boys</button>
+                    <button onclick="filterItems('Girls')"
+                        class="filter-btn px-6 py-2 rounded-full font-bold bg-slate-100 text-slate-600 hover:bg-slate-200">Girls</button>
+                    <button onclick="filterItems('Kids')"
+                        class="filter-btn px-6 py-2 rounded-full font-bold bg-slate-100 text-slate-600 hover:bg-slate-200">Kids</button>
                 </div>
             </div>
 
@@ -144,13 +214,16 @@
     <!-- About Section -->
     <section id="about" class="py-24 bg-slate-50 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-[40px] p-8 md:p-16 shadow-xl border border-slate-100 flex flex-col lg:flex-row gap-16 items-center">
+            <div
+                class="bg-white rounded-[40px] p-8 md:p-16 shadow-xl border border-slate-100 flex flex-col lg:flex-row gap-16 items-center">
                 <div class="flex-1 grid grid-cols-2 gap-4">
                     <div class="space-y-4">
                         <div class="aspect-[4/5] bg-slate-200 rounded-3xl overflow-hidden shadow-lg">
-                            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT9t9ur1xxWBdMx0hv54uLGILjSPCfpds3-SVOTpB-Z1v78lW56NCfRF3KjPfUQUcfzQCteDDCzK7dJ44hri798bof6hXQiFbPtADEJSkZm" class="w-full h-full object-cover" alt="Shop">
+                            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT9t9ur1xxWBdMx0hv54uLGILjSPCfpds3-SVOTpB-Z1v78lW56NCfRF3KjPfUQUcfzQCteDDCzK7dJ44hri798bof6hXQiFbPtADEJSkZm"
+                                class="w-full h-full object-cover" alt="Shop">
                         </div>
-                        <div class="aspect-square bg-indigo-600 rounded-3xl flex items-center justify-center p-6 text-white text-center">
+                        <div
+                            class="aspect-square bg-indigo-600 rounded-3xl flex items-center justify-center p-6 text-white text-center">
                             <div>
                                 <p class="text-4xl font-black mb-2">100%</p>
                                 <p class="text-xs font-bold uppercase tracking-widest">Quality Assurance</p>
@@ -158,27 +231,40 @@
                         </div>
                     </div>
                     <div class="space-y-4 pt-8">
-                        <div class="aspect-square bg-slate-800 rounded-3xl flex items-center justify-center p-6 text-white text-center">
+                        <div
+                            class="aspect-square bg-slate-800 rounded-3xl flex items-center justify-center p-6 text-white text-center">
                             <div>
                                 <p class="text-4xl font-black mb-2">24/7</p>
                                 <p class="text-xs font-bold uppercase tracking-widest">Online Support</p>
                             </div>
                         </div>
                         <div class="aspect-[4/5] bg-slate-200 rounded-3xl overflow-hidden shadow-lg">
-                            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQqDe4-s6Fk4A_6SSjLNjTzYe4Ybtu4QvWHixmT4aX5a9s_oMkxqXnkCNsrzyplnR9dpZVR797_VP6wckBJZ9bWlIH8lm3dM63XtNCWXRYoAkiXhodfaxrTaQ" class="w-full h-full object-cover" alt="Display">
+                            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQqDe4-s6Fk4A_6SSjLNjTzYe4Ybtu4QvWHixmT4aX5a9s_oMkxqXnkCNsrzyplnR9dpZVR797_VP6wckBJZ9bWlIH8lm3dM63XtNCWXRYoAkiXhodfaxrTaQ"
+                                class="w-full h-full object-cover" alt="Display">
                         </div>
                     </div>
                 </div>
                 <div class="flex-1">
-                    <h2 class="text-4xl font-black text-slate-900 mb-6">Welcome to <span class="text-indigo-600">Trend Fusion</span></h2>
+                    <h2 class="text-4xl font-black text-slate-900 mb-6">Welcome to <span class="text-indigo-600">Trend
+                            Fusion</span></h2>
                     <div class="space-y-4 text-slate-600 text-lg leading-relaxed">
-                        <p>Trend Fusion is not just a store, it's a fashion destination. We understand that your clothing reflects your personality.</p>
-                        <p>We have the best combination of the latest designs and premium fabrics for boys, girls and kids.</p>
+                        <p>Trend Fusion is not just a store, it's a fashion destination. We understand that your
+                            clothing reflects your personality.</p>
+                        <p>We have the best combination of the latest designs and premium fabrics for boys, girls and
+                            kids.</p>
                         <ul class="space-y-3 pt-4">
-                            <li class="flex items-center gap-3 font-bold text-slate-900"><span class="w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-[10px]">★</span> Latest Trendy Designs</li>
-                            <li class="flex items-center gap-3 font-bold text-slate-900"><span class="w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-[10px]">★</span> Premium Quality Fabrics</li>
-                            <li class="flex items-center gap-3 font-bold text-slate-900"><span class="w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-[10px]">★</span> Affordable & Best Prices</li>
-                            <li class="flex items-center gap-3 font-bold text-slate-900"><span class="w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-[10px]">★</span> Super Fast Online Delivery</li>
+                            <li class="flex items-center gap-3 font-bold text-slate-900"><span
+                                    class="w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-[10px]">★</span>
+                                Latest Trendy Designs</li>
+                            <li class="flex items-center gap-3 font-bold text-slate-900"><span
+                                    class="w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-[10px]">★</span>
+                                Premium Quality Fabrics</li>
+                            <li class="flex items-center gap-3 font-bold text-slate-900"><span
+                                    class="w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-[10px]">★</span>
+                                Affordable & Best Prices</li>
+                            <li class="flex items-center gap-3 font-bold text-slate-900"><span
+                                    class="w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-[10px]">★</span>
+                                Super Fast Online Delivery</li>
                         </ul>
                     </div>
                 </div>
@@ -195,28 +281,30 @@
                         <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center rotate-3">
                             <span class="text-white font-black text-xl">TF</span>
                         </div>
-                        <span class="text-xl font-black tracking-tighter uppercase">Trend<span class="text-indigo-400">Fusion</span></span>
+                        <span class="text-xl font-black tracking-tighter uppercase">Trend<span
+                                class="text-indigo-400">Fusion</span></span>
                     </div>
-                    <p class="text-slate-400 text-sm leading-relaxed">"Trendy Kapde, Sabke Liye." Trend Fusion — Fashion jo aapko sabse alag aur trendy dikhaye.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">"Trendy Kapde, Sabke Liye." Trend Fusion — Fashion
+                        jo aapko sabse alag aur trendy dikhaye.</p>
                     <div class="flex gap-4">
-    <!-- Instagram Link -->
-    <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" 
-       class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors cursor-pointer text-white no-underline">
-        IG
-    </a>
-    
-    <!-- Facebook Link -->
-    <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" 
-       class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors cursor-pointer text-white no-underline">
-        FB
-    </a>
-    
-    <!-- Twitter/X Link -->
-    <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" 
-       class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors cursor-pointer text-white no-underline">
-        TW
-    </a>
-</div>
+                        <!-- Instagram Link -->
+                        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors cursor-pointer text-white no-underline">
+                            IG
+                        </a>
+
+                        <!-- Facebook Link -->
+                        <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors cursor-pointer text-white no-underline">
+                            FB
+                        </a>
+
+                        <!-- Twitter/X Link -->
+                        <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer"
+                            class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors cursor-pointer text-white no-underline">
+                            TW
+                        </a>
+                    </div>
                 </div>
                 <div>
                     <h4 class="text-lg font-bold mb-6">Quick Links</h4>
@@ -241,7 +329,7 @@
                         <li>Trend Fusion,Rawli mahdood, Main Market [Haridwar]</li>
                         <li>Email: support@trendfusion.com</li>
                         <li>Phone: +91 6396905195</li>
-						<li>Phone: +91 8535048626</li>
+                        <li>Phone: +91 8535048626</li>
                     </ul>
                 </div>
             </div>
@@ -267,9 +355,9 @@
         function renderProducts(category = 'All') {
             const grid = document.getElementById('product-grid');
             grid.innerHTML = '';
-            
+
             const filtered = category === 'All' ? products : products.filter(p => p.category === category);
-            
+
             filtered.forEach(product => {
                 const item = `
                     <div class="group cursor-pointer">
@@ -301,7 +389,7 @@
         function filterItems(category) {
             const buttons = document.querySelectorAll('.filter-btn');
             buttons.forEach(btn => {
-                if(btn.innerText === category) {
+                if (btn.innerText === category) {
                     btn.className = 'filter-btn active px-6 py-2 rounded-full font-bold bg-indigo-600 text-white shadow-lg';
                 } else {
                     btn.className = 'filter-btn px-6 py-2 rounded-full font-bold bg-slate-100 text-slate-600 hover:bg-slate-200';
@@ -326,4 +414,5 @@
         renderProducts();
     </script>
 </body>
+
 </html>
